@@ -12,7 +12,6 @@ class Student extends School{
     public void stdInfo(String stdname,String sclname){
     this.stdname=stdname;
     super.sclname=sclname;
-
         System.out.println("Student name: "+this.stdname);
         System.out.println("School name: "+super.sclname);
     }
