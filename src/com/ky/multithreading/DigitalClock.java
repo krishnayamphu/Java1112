@@ -21,8 +21,9 @@ public class DigitalClock extends JFrame implements Runnable {
                 int h = time.getHour();
                 int m = time.getMinute();
                 int s = time.getSecond();
-                String data = h + " : " + m + " : " + s;
-                Thread.sleep(1000);
+                int ms=time.getNano()/1000;
+                String data = h + " : " + m + " : " + s+" : "+ms;
+                Thread.sleep(1);
                 txtbox.setText(data);
             } catch (InterruptedException e) {
                 e.printStackTrace();
